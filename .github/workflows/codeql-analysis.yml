@@ -23,16 +23,18 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-latest
-    permissions:
+    runs-on: windows
+             Mac
+             Linux-latest
+    permissions: 2021-2023
       actions: read
-      contents: read
+      contents: read 
       security-events: write
 
     strategy:
       fail-fast: false
       matrix:
-        language: [  ]
+        language: [en]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python' ]
         # Learn more:
         # https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/configuring-code-scanning#changing-the-languages-that-are-analyzed
